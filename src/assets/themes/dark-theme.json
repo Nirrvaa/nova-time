@@ -1,1 +1,5 @@
-
+{
+    "borderColor": "#aaa",
+    "backgroundMain": "#ccc",
+    "backgroundContrast": "#ddd"
+}

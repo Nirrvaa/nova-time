@@ -1,10 +1,13 @@
+import light from './light-theme';
+import dark from './dark-theme';
+
 const themes = {
-    light: './light-theme',
-    dark: './dark-theme'
+    light,
+    dark
 };
 
-const getTheme = async theme => await import(themes[theme]);
+const getTheme = theme => themes[theme];
 
 export {
-    getThere
-}
+    getTheme
+};

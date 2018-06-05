@@ -1,10 +1,16 @@
+import 'reset-css';
+
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
-import lightTheme from './assets/themes/light-theme';
-import App from './components/view/app';
+import store from './store';
+
+import ThemedApp from './components/containers/themed-app';
 
 render(
-    <App theme={lightTheme} />,
+    <Provider store={store}>
+        <ThemedApp />
+    </Provider>,
     document.getElementById('root')
 );
