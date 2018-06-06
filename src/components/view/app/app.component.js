@@ -11,9 +11,7 @@ class App extends PureComponent {
         return (
             <ThemeProvider theme={this.props.theme}>
                 <Fragment>
-                    <Header>
-                        pidor
-                    </Header>
+                    <Header />
                 </Fragment>
             </ThemeProvider>
         );

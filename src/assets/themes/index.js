@@ -1,13 +1,7 @@
 import light from './light-theme';
 import dark from './dark-theme';
 
-const themes = {
+export default {
     light,
     dark
-};
-
-const getTheme = theme => themes[theme];
-
-export {
-    getTheme
 };

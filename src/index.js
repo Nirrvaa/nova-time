@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
-import ThemedApp from './components/containers/themed-app';
+import ThemedApp from './components/containers/app';
 
 render(
     <Provider store={store}>

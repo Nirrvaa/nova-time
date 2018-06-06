@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 
-// import visibilityFilter from './visibility-filter';
-// import todos from './todos';
-import theme from './theme';
-// import login from './login';
+import currentTheme from './current-theme';
+import allThemes from './all-themes';
 
 export default combineReducers({
-    theme
+    currentTheme,
+    allThemes
 });

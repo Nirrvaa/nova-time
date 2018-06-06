@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import App from '../../view/app';
-import { getTheme } from './selectors'; 
+import { getCurrentThemeStyles } from './selectors'; 
 
 const mapStateToProps = state => {
     return { 
-        theme: getTheme(state) 
+        theme: getCurrentThemeStyles(state)
     }
 }
 

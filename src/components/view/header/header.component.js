@@ -3,6 +3,8 @@ import injectSheet from 'react-jss';
 
 import styles from './header.styles';
 
+import ThemePicker from '../../containers/theme-picker';
+
 const Header = ({ classes, children }) => (
     <header className={classes.header}>
         <h1 className='header__logo'>
@@ -12,6 +14,7 @@ const Header = ({ classes, children }) => (
         <button className='header__button'>
             {children}
         </button>
+        <ThemePicker />
     </header>
 );
 
