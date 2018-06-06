@@ -1,1 +1,1 @@
-export { default as allThemeNames } from './allThemeNames.selector';
+export { default as allThemesData } from './allThemesData.selector';

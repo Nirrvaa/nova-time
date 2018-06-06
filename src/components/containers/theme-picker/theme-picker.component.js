@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import { setTheme } from '../../../actions';
-import { allThemeNames } from './selectors'; 
+import { allThemesData } from './selectors'; 
 
 import ThemePicker from '../../view/theme-picker';
 
 const mapStateToProps = state => ({
     currentTheme: state.currentTheme,
-    allThemes: allThemeNames(state)
+    themes: allThemesData(state)
 });
 
 const mapDispatchToProps = dispatch => {

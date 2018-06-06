@@ -1,5 +1,15 @@
+const themePickerList = 'themePickerList';
+
 export default theme => ({
-    header: {
-        background: theme.backgroundContrast
+    [themePickerList]: {
+        background: 'green'
+    },
+    [`${themePickerList}__item`]: {
+        background: 'blue'
+    },
+    [`${themePickerList}__item_picked`]: {
+        extend: `${themePickerList}__item`,
+        background: 'green'
     }
+
 });

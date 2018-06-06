@@ -5,13 +5,13 @@ import styles from './theme-picker.styles';
 
 import Theme from '../theme';
 
-const ThemePicker = ({ classes, currentTheme, allThemes, setTheme }) => (
+const ThemePicker = ({ classes, currentTheme, themes, setTheme }) => (
     <ul className={classes.themePickerList}>
         {
-            allThemes.map(themeName => (
-                <li className={classes.themePickerList__item} key={themeName}>
-                    <Theme setTheme={setTheme}>
-                        {themeName}
+            themes.map(theme => (
+                <li className={theme.isCurrent ? classes.themePickerList__item_picked: classes.themePickerList__item} key={theme.id}>
+                    <Theme setTheme={setTheme} backgroundColor={theme.color}>
+                        {theme.name}
                     </Theme>
                 </li>
             ))

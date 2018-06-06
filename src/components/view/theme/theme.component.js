@@ -3,8 +3,8 @@ import injectSheet from 'react-jss';
 
 import styles from './theme.styles';
 
-const Theme = ({ classes, children, setTheme }) => (
-    <button className={classes.themeButton} onClick={() => setTheme(children)}>
+const Theme = ({ classes, children, setTheme, backgroundColor }) => (
+    <button className={classes.themeButton} onClick={() => setTheme(children)} style={{ backgroundColor: backgroundColor}}>
         {children}
     </button>
 );
